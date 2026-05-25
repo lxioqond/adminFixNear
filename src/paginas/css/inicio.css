@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0a0a0a;
+}
+
+.inicio-page {
+  min-height: 100vh;
+  background: #0a0a0a;
+  color: white;
+  padding: 34px 20px;
+  box-sizing: border-box;
+}
+
+.inicio-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-circle {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #1e88e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.inicio-header h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.inicio-content {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.hero-icon {
+  font-size: 56px;
+  margin-bottom: 22px;
+}
+
+.inicio-content h1 {
+  font-size: 31px;
+  line-height: 1.2;
+  margin: 0 0 14px;
+}
+
+.inicio-content p {
+  color: #c7c7c7;
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0 auto 32px;
+  max-width: 340px;
+}
+
+.inicio-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.btn-primary,
+.btn-secondary,
+.btn-info {
+  width: 100%;
+  padding: 15px;
+  border-radius: 16px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-primary {
+  border: none;
+  background: #1e88e5;
+  color: white;
+}
+
+.btn-secondary {
+  border: 1px solid #2f2f2f;
+  background: #151515;
+  color: white;
+}
+
+.btn-info {
+  margin-top: 18px;
+  border: none;
+  background: transparent;
+  color: #8bbcff;
+}
+
+.logo-circle {
+  width: 52px;
+  height: 52px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: transparent;
+  border-radius: 0;
+}

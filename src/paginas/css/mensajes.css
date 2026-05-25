@@ -1,0 +1,129 @@
+.mensajes-page {
+  background: var(--bg-primary);
+  min-height: 100vh;
+  padding: 60px 16px 100px;
+  color: var(--text-primary);
+  font-family: inherit;
+}
+
+.mensajes-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.mensajes-header h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.mensajes-editar {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--text-primary);
+}
+
+.mensajes-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.mensajes-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 10px;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.mensajes-item:active {
+  background: var(--bg-item);
+}
+
+.mensajes-avatar {
+  position: relative;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+.mensajes-avatar-punto {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  width: 12px;
+  height: 12px;
+  background: var(--success);
+  border-radius: 50%;
+  border: 2px solid var(--bg-primary);
+}
+
+.mensajes-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.mensajes-info-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.mensajes-nombre {
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--text-primary);
+}
+
+.mensajes-hora {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.mensajes-info-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mensajes-ultimo {
+  font-size: 13px;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+.mensajes-oficio {
+  font-size: 11px;
+  color: var(--accent);
+  margin-top: 2px;
+  display: block;
+}
+
+.mensajes-badge {
+  background: var(--accent);
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 999px;
+  flex-shrink: 0;
+}

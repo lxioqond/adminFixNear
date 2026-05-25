@@ -1,0 +1,114 @@
+.sol-page {
+  min-height: 100vh;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  padding: 32px 16px 90px;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.sol-header {
+  margin-bottom: 20px;
+}
+
+.sol-header h2 {
+  margin: 0;
+  font-size: 28px;
+  color: var(--text-primary);
+}
+
+.sol-header p {
+  margin-top: 5px;
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.sol-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.sol-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 15px;
+}
+
+.sol-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.sol-card h3 {
+  margin: 0 0 6px;
+  font-size: 17px;
+  color: var(--text-primary);
+}
+
+.sol-card p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.sol-estado {
+  font-size: 11px;
+  font-weight: bold;
+  padding: 6px 9px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.sol-estado.en-proceso {
+  background: var(--accent-dim);
+  color: var(--accent);
+}
+
+.sol-estado.aceptada {
+  background: var(--success-dim);
+  color: var(--success);
+}
+
+.sol-estado.finalizada {
+  background: rgba(156,163,175,0.12);
+  color: var(--text-secondary);
+}
+
+.sol-info {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sol-info p {
+  color: var(--text-secondary);
+  font-size: 13px;
+  margin: 0;
+}
+
+.sol-info strong {
+  color: var(--text-primary);
+}
+
+.sol-btn {
+  width: 100%;
+  margin-top: 14px;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background: var(--accent);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.2s;
+}
+
+.sol-btn:active { background: var(--accent-hover); }

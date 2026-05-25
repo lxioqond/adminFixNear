@@ -1,0 +1,63 @@
+.navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: var(--navbar-bg);
+  border-top: 1px solid var(--navbar-border);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0 12px;
+  z-index: 1000;
+}
+
+.navbar div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  min-width: 58px;
+  color: var(--navbar-icon);
+  font-size: 12px;
+  cursor: pointer;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.navbar span {
+  font-size: 11px;
+}
+
+.navbar div:hover {
+  color: var(--text-primary);
+  transform: scale(1.05);
+}
+
+.navbar div.active {
+  color: var(--navbar-active);
+}
+
+.container {
+  padding-bottom: 80px;
+}
+
+.worker-tab {
+  position: relative;
+}
+
+.worker-tab svg {
+  color: var(--accent);
+}
+
+.worker-tab::after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  width: 6px;
+  height: 6px;
+  background: var(--success);
+  border-radius: 50%;
+  border: 1.5px solid var(--navbar-bg);
+}

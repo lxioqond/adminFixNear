@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.registro-container {
+  background: #0a0a0a;
+  color: white;
+  min-height: 100vh;
+  padding: 48px 24px 32px;
+  display: flex;
+  flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.registro-back {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 32px;
+  width: fit-content;
+}
+
+.registro-container h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.registro-subtitle {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 40px;
+}
+
+.registro-subtitle a {
+  color: #4a90e2;
+  text-decoration: none;
+}
+
+.campo-grupo {
+  margin-bottom: 16px;
+}
+
+.campo-grupo label {
+  display: block;
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 6px;
+}
+
+.campo-grupo input {
+  width: 100%;
+  padding: 14px 16px;
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.campo-grupo input::placeholder {
+  color: #555;
+}
+
+.campo-grupo input:focus {
+  border-color: #4a90e2;
+}
+
+.btn-registrarse {
+  width: 100%;
+  padding: 16px;
+  background: #3b7fe4;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s;
+}
+
+.btn-registrarse:hover {
+  background: #2f6dcb;
+}
+
+.divisor {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 24px 0;
+  color: #555;
+  font-size: 13px;
+}
+
+.divisor::before,
+.divisor::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #2a2a2a;
+}
+
+.social-btns {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.btn-social {
+  flex: 1;
+  padding: 13px;
+  background: transparent;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.2s;
+}
+
+.btn-social:hover {
+  background: #1a1a1a;
+}
+
+.terminos {
+  font-size: 12px;
+  color: #555;
+  text-align: center;
+  margin-top: auto;
+  line-height: 1.5;
+}
+
+.terminos a {
+  color: #555;
+  text-decoration: underline;
+}

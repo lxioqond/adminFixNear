@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0b141a;
+}
+
+.conv-page {
+    min-height: 100vh;
+    background: #0b141a;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.conv-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px;
+    background: #111b21;
+    border-bottom: 1px solid #1f2c34;
+}
+
+.back-btn {
+    width: 38px;
+    height: 38px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.conv-avatar {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: #1e88e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.conv-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.conv-info h3 {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.conv-info span {
+    font-size: 13px;
+    color: #9aa6ad;
+}
+
+.conv-messages {
+    flex: 1;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+}
+
+.conv-message {
+    max-width: 75%;
+    padding: 12px 14px;
+    border-radius: 14px;
+    font-size: 14px;
+    line-height: 1.4;
+    word-wrap: break-word;
+}
+
+.conv-message p {
+    margin: 0;
+}
+
+.conv-message span {
+    display: block;
+    text-align: right;
+    font-size: 11px;
+    color: #d1d5db;
+    margin-top: 6px;
+}
+
+.conv-message.recibido {
+    align-self: flex-start;
+    background: #202c33;
+    color: white;
+}
+
+.conv-message.enviado {
+    align-self: flex-end;
+    background: #005c4b;
+    color: white;
+}
+
+.conv-input-area {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 12px;
+    background: #111b21;
+    border-top: 1px solid #1f2c34;
+}
+
+.conv-input-area input {
+    flex: 1;
+    min-width: 0;
+    height: 46px;
+    border: none;
+    outline: none;
+    border-radius: 23px;
+    padding: 0 16px;
+    background: #202c33;
+    color: white;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.conv-input-area input::placeholder {
+    color: #9aa6ad;
+}
+
+.conv-input-area button {
+    width: auto;
+    min-width: 86px;
+    height: 46px;
+    border: none;
+    border-radius: 23px;
+    padding: 0 18px;
+    background: #1e88e5;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    flex-shrink: 0;
+}
